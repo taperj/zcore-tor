@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv sh
+echo >&2 "starting zcored"
+HOME=/home/zcored
+sudo -u zcored zcored
