@@ -197,9 +197,9 @@ sleep 10
 docker ps
 printf "${GREEN}INSTALLATION COMPLETE.${NC}\n"
 printf "${YELLOW}ONCE SYNCED YOU CAN GET THE TOR(onion) ADDRESS TO ADD TO YOUR COLD WALLET masternode.conf as server address with:${NC}\n"
-printf "${WHITE}$ sudo docker container exec zcore-tor-$PORTNUMBER grep AddLocal /home/zcored/.zcore/debug.log${NC}\n"
+printf "${WHITE}$ sudo docker container exec zcore-tor-$PORTNUMBER grep advertising /home/zcored/.zcr/debug.log${NC}\n"
 printf "${YELLOW}THE ABOVE COMMAND SHOULD OUTPUT SOMETHING LIKE THIS EXAMPLE OUTPUT:${NC}\n"
-printf "${WHITE}2019-11-24 02:33:16 AddLocal(zsddfken27kdsdx.onion:$PORTNUMBER,4)${NC}\n"
+printf "${WHITE}2020-01-12 00:21:00 tor: Got service ID b2bbjwyvksnd6az4, advertising service zsddfken27kdsdx.onion:$PORTNUMBER${NC}\n"
 printf "${YELLOW}in this example you would add ${GREEN}zsddfken27kdsdx.onion:$PORTNUMBER${YELLOW} to your cold wallet masternode.conf as ip addr for this alias. Yours will be different than the example.${NC}\n"
 printf "${RED}IMPORTANT: IF YOU ARE RUNNING A FIREWALL MAKE SURE TO ALLOW PORT $PORTNUMBER/TCP FOR zcored${NC}\n"
 printf "${YELLOW}Tips for the developer:${NC}\n"
