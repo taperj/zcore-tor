@@ -204,5 +204,5 @@ printf "${YELLOW}in this example you would add ${GREEN}zsddfken27kdsdx.onion:$PO
 printf "${RED}IMPORTANT: IF YOU ARE RUNNING A FIREWALL MAKE SURE TO ALLOW PORT $PORTNUMBER/TCP FOR zcored${NC}\n"
 printf "${YELLOW}Tips for the developer:${NC}\n"
 printf "${YELLOW}BTC: 3HLx5AMe9S5SWzVqLwAib3oyGZm5nAAWKe${NC}\n"
-printf "${YELLOW}ZCORE: ${NC}\n"
+printf "${YELLOW}ZCORE: zKG9pqY4HnYu7EZQbtG72k8FB3t1gtxuSY${NC}\n"
 printf "${YELLOW}HAVE FUN ANONYMOUS ZCORE MASTERNODING!${NC}\n"
