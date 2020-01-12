@@ -2,7 +2,7 @@
 docker container: ZCore masternode with Tor and Stubby
 
 Description and purpose:
-This repository is a contribution as a resource to easily build a docker image and create a container that contains a hot ZCore Coin wallet configured to run as a masternode, transcendenced uses Tor to connect to the network for privacy and anonymity and all dns queries are encrypted and anonymized using Stubby/Proxychains4/Tor. Tor/Stubby are contained within the same container as zcored making this an all-in-one solution using s6-init to run multiple processes in the same container. The linkage between zcored and the local Tor is configured on build of the image. Tor runs as user debian-tor within the container and zcored runs as user zcored. The image is based on ubuntu 18.04 and the Dockerfile will pull this image as a base on build.
+This repository is a contribution as a resource to easily build a docker image and create a container that contains a hot ZCore Coin wallet configured to run as a masternode, zcored uses Tor to connect to the network for privacy and anonymity and all dns queries are encrypted and anonymized using Stubby/Proxychains4/Tor. Tor/Stubby are contained within the same container as zcored making this an all-in-one solution using s6-init to run multiple processes in the same container. The linkage between zcored and the local Tor is configured on build of the image. Tor runs as user debian-tor within the container and zcored runs as user zcored. The image is based on ubuntu 18.04 and the Dockerfile will pull this image as a base on build.
 
 <b>BUILD INFO</b><br>
 Steps to install:<br>
