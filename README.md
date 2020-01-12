@@ -31,7 +31,7 @@ Stubby is a small DNS stub resolver that uses TLS to encrypt its lookups when qu
 Was this a helpful installer?<br>
 feel free to drop me a tip..<br>
 BTC: 3HLx5AMe9S5SWzVqLwAib3oyGZm5nAAWKe<br>
-ZCORE: <br>
+ZCORE: zKG9pqY4HnYu7EZQbtG72k8FB3t1gtxuSY<br>
 <br>
 <br>
 <b>Relevant links:</b><br>
