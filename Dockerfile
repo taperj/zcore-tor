@@ -17,6 +17,7 @@ RUN apt-get update \
 	&&    export CONF_DIR=/home/zcored/.zcr \
 	&&    mkdir -v $CONF_DIR \
 	&&    chown -vR zcored:zcored $CONF_DIR \
+	&&    ln -s $CONF_DIR /root/.zcr \
 	&&    echo "Setting up /etc/tor/torrc" \
 	&&    echo "User debian-tor" >> /etc/tor/torrc \
 	&&    echo "DataDirectory /home/debian-tor/.tor" >> /etc/tor/torrc \
