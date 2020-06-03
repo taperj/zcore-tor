@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 echo >&2 "zcored exited. code=${1}"
 
+zcore-cli stop
+
 # terminate other services to exit from the container
 exec s6-svscanctl -t /var/run/s6/services
