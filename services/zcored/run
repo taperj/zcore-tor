@@ -1,4 +1,17 @@
 #!/usr/bin/with-contenv sh
 echo >&2 "starting zcored"
 HOME=/home/zcored
-sudo -u zcored zcored
+
+#reindex if reindex file found
+
+for file in /root/reindex
+do
+if [ -f $file ]; then
+        printf "reindex file detected, starting zcored with -reindex\n"
+        rm -fvr /root/reindex
+        sudo -u zcored zcored -reindex
+else
+        printf "reindex file not detected, starting zcored\n"
+        sudo -u zcored zcored
+fi
+done
