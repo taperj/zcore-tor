@@ -8,11 +8,11 @@ RUN apt-get update \
 	&&    mkdir -v /home/debian-tor \
 	&&    chown -v debian-tor:debian-tor /home/debian-tor \
 	&&    chmod -v 750 /home/debian-tor \
-	&&    wget https://github.com/zcore-coin/zcore-2.0/releases/download/v2.0.1/zcore-2.0.1-x86_64-linux-gnu.tar.gz \
-	&&    tar zxvf zcore-2.0.1-x86_64-linux-gnu.tar.gz \
-	&&    chmod 755 zcore-2.0.1/bin/* \
-	&&    mv -v zcore-2.0.1/bin/* /usr/bin/ \
-	&&    rm -vrf zcore-2.0.1* \
+	&&    wget https://github.com/zcore-coin/zcore-2.0/releases/download/v2.0.2.2/zcore-2.0.2.2-x86_64-linux-gnu.tar.gz \
+        &&    tar zxvf zcore-2.0.2.2-x86_64-linux-gnu.tar.gz \
+        &&    chmod 755 zcore-2.0.2/bin/* \
+        &&    mv -v zcore-2.0.2/bin/* /usr/bin/ \
+        &&    rm -vrf zcore-2.0.2* \
 	&&    useradd -s /usr/sbin/nologin -m -d /home/zcored zcored \
 	&&    export CONF_DIR=/home/zcored/.zcr \
 	&&    mkdir -v $CONF_DIR \
